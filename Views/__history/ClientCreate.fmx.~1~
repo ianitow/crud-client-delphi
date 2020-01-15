@@ -1,0 +1,223 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 653
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object headerLayout: TScaledLayout
+    Align = MostTop
+    Locked = True
+    OriginalWidth = 350.000000000000000000
+    OriginalHeight = 57.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    object ColorBox1: TColorBox
+      Align = Contents
+      Color = claBlack
+      Size.Width = 350.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object txtNameHeader: TLabel
+      Align = Contents
+      Anchors = []
+      AutoTranslate = False
+      ClipParent = True
+      StyledSettings = [Family]
+      Locked = True
+      Size.Width = 350.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Criar Cliente'
+    end
+  end
+  object mainButtonsLayout: TScaledLayout
+    Align = MostTop
+    OriginalWidth = 350.000000000000000000
+    OriginalHeight = 360.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+    object GroupBox2: TGroupBox
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor, Other]
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ID:'
+      TextSettings.Font.Style = [fsBold]
+      TabOrder = 4
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = MostBottom
+        TabOrder = 0
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+        Position.Y = 33.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object GroupBox1: TGroupBox
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor, Other]
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Limite:'
+      TextSettings.Font.Style = [fsBold]
+      TabOrder = 3
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = MostBottom
+        TabOrder = 0
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+        Position.Y = 33.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object boxDateEdit: TGroupBox
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor, Other]
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 275.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Data de Cadastro:'
+      TextSettings.Font.Style = [fsBold]
+      TabOrder = 2
+      object DateEdit1: TDateEdit
+        Date = 43830.000000000000000000
+        Align = MostBottom
+        Position.Y = 33.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        TabOrder = 2
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+      end
+    end
+    object boxAddress: TGroupBox
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor, Other]
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 190.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Endere'#231'o:'
+      TextSettings.Font.Style = [fsBold]
+      TabOrder = 1
+      object txtEditAddress: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = MostBottom
+        TabOrder = 1
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+        Position.Y = 33.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object boxEditName: TGroupBox
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor, Other]
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 105.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nome / Fornecedor:'
+      TextSettings.Font.Style = [fsBold]
+      TabOrder = 0
+      object txtEditName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = MostBottom
+        TabOrder = 1
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Leading
+        Position.Y = 33.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object ScaledLayout1: TScaledLayout
+    Align = MostBottom
+    OriginalWidth = 350.000000000000000000
+    OriginalHeight = 152.000000000000000000
+    Position.Y = 501.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    object Button1: TButton
+      Align = MostBottom
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #10003' Cadastrar'
+      TintColor = claDarkgreen
+    end
+    object Button2: TButton
+      Align = MostBottom
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 82.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #55358#56340'  Voltar'
+      TintColor = claDarkred
+    end
+  end
+end

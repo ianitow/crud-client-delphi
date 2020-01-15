@@ -1,0 +1,118 @@
+object formClientMenu: TformClientMenu
+  Left = 0
+  Top = 0
+  Caption = 'Clientes'
+  ClientHeight = 585
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object headerLayout: TScaledLayout
+    Align = MostTop
+    Locked = True
+    OriginalWidth = 350.000000000000000000
+    OriginalHeight = 57.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    object ColorBox1: TColorBox
+      Align = Contents
+      Color = claBlack
+      Size.Width = 350.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object txtNameHeader: TLabel
+      Align = Contents
+      Anchors = []
+      AutoTranslate = False
+      ClipParent = True
+      StyledSettings = [Family]
+      Locked = True
+      Size.Width = 350.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Clientes'
+    end
+  end
+  object mainButtonsLayout: TScaledLayout
+    Align = MostTop
+    OriginalWidth = 350.000000000000000000
+    OriginalHeight = 584.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 584.000000000000000000
+    Size.PlatformDefault = False
+    object ColorBox2: TColorBox
+      Align = Contents
+      Color = claWhitesmoke
+      Size.Width = 350.000000000000000000
+      Size.Height = 584.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object btnNewClient: TButton
+      Align = MostTop
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 71.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Cadastrar'
+      OnClick = btnNewClientClick
+    end
+    object btnEmail: TButton
+      Align = MostTop
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 71.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Editar'
+    end
+    object btnProduct: TButton
+      Align = MostTop
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 141.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 71.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Listar'
+    end
+    object Button1: TButton
+      Align = MostTop
+      StyledSettings = [Family, Size, FontColor]
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 323.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 71.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Deletar'
+      TextSettings.Font.Style = [fsBold]
+      TintColor = claDarkred
+    end
+  end
+end

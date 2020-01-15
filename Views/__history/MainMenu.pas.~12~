@@ -1,0 +1,40 @@
+unit MainMenu;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Colors, FMX.Layouts;
+
+type
+  TformMainMenu = class(TForm)
+    headerLayout: TScaledLayout;
+    ColorBox1: TColorBox;
+    txtNameHeader: TLabel;
+    mainButtonsLayout: TScaledLayout;
+    btnClientes: TButton;
+    btnEmail: TButton;
+    btnProduct: TButton;
+    procedure btnClientesClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  formMainMenu: TformMainMenu;
+
+implementation
+uses
+ClientMenuMain,ClientCreate;
+
+{$R *.fmx}
+
+procedure TformMainMenu.btnClientesClick(Sender: TObject);
+begin
+ClientMenuMain.formClientMenu.Show;
+end;
+
+end.
